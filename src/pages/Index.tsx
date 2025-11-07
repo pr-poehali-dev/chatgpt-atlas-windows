@@ -16,20 +16,20 @@ const Index = () => {
       <div className="relative">
         <section id="hero" className="container mx-auto px-4 py-20 md:py-32">
           <div className="flex flex-col items-center text-center space-y-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight animate-fade-in-up">
               ChatGPT Atlas on Windows
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-400 max-w-2xl">
+            <p className="text-xl md:text-2xl text-slate-400 max-w-2xl animate-fade-in-up" style={{animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards'}}>
               Интеллектуальный ассистент нового поколения для Windows. Мощь искусственного интеллекта на вашем рабочем столе.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up" style={{animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards'}}>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white hover:scale-105 transition-transform">
                 <Icon name="Download" className="mr-2" size={20} />
                 Скачать сейчас
               </Button>
-              <Button size="lg" variant="outline" className="border-slate-700 text-slate-300 hover:bg-slate-800">
+              <Button size="lg" variant="outline" className="border-slate-700 text-slate-300 hover:bg-slate-800 hover:scale-105 transition-transform">
                 Узнать больше
               </Button>
             </div>
@@ -37,7 +37,7 @@ const Index = () => {
         </section>
 
         <section id="features" className="container mx-auto px-4 py-20">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Возможности
             </h2>
@@ -47,8 +47,8 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 transition-all">
-              <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-4">
+            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 hover:scale-105 hover:-translate-y-2 transition-all duration-300 animate-scale-in" style={{animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards'}}>
+              <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-4 animate-pulse-glow">
                 <Icon name="Brain" className="text-blue-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -59,8 +59,8 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 transition-all">
-              <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4">
+            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 hover:scale-105 hover:-translate-y-2 transition-all duration-300 animate-scale-in" style={{animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards'}}>
+              <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4 animate-pulse-glow">
                 <Icon name="Zap" className="text-purple-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -71,8 +71,8 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 transition-all">
-              <div className="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mb-4">
+            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 hover:scale-105 hover:-translate-y-2 transition-all duration-300 animate-scale-in" style={{animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards'}}>
+              <div className="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mb-4 animate-pulse-glow">
                 <Icon name="Shield" className="text-green-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -83,8 +83,8 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 transition-all">
-              <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center mb-4">
+            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 hover:scale-105 hover:-translate-y-2 transition-all duration-300 animate-scale-in" style={{animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards'}}>
+              <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center mb-4 animate-pulse-glow">
                 <Icon name="Layers" className="text-orange-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -95,8 +95,8 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 transition-all">
-              <div className="w-12 h-12 bg-pink-600/20 rounded-lg flex items-center justify-center mb-4">
+            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 hover:scale-105 hover:-translate-y-2 transition-all duration-300 animate-scale-in" style={{animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards'}}>
+              <div className="w-12 h-12 bg-pink-600/20 rounded-lg flex items-center justify-center mb-4 animate-pulse-glow">
                 <Icon name="Code" className="text-pink-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -107,8 +107,8 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 transition-all">
-              <div className="w-12 h-12 bg-cyan-600/20 rounded-lg flex items-center justify-center mb-4">
+            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm p-6 hover:bg-slate-900/70 hover:scale-105 hover:-translate-y-2 transition-all duration-300 animate-scale-in" style={{animationDelay: '0.6s', opacity: 0, animationFillMode: 'forwards'}}>
+              <div className="w-12 h-12 bg-cyan-600/20 rounded-lg flex items-center justify-center mb-4 animate-pulse-glow">
                 <Icon name="Globe" className="text-cyan-400" size={24} />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -133,8 +133,8 @@ const Index = () => {
             </div>
 
             <div className="space-y-8">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="flex gap-6 animate-fade-in-up" style={{animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards'}}>
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl animate-float">
                   1
                 </div>
                 <div>
@@ -151,8 +151,8 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="flex gap-6 animate-fade-in-up" style={{animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards'}}>
+                <div className="flex-shrink-0 w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl animate-float" style={{animationDelay: '0.5s'}}>
                   2
                 </div>
                 <div>
@@ -165,8 +165,8 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="flex gap-6 animate-fade-in-up" style={{animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards'}}>
+                <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl animate-float" style={{animationDelay: '1s'}}>
                   3
                 </div>
                 <div>
