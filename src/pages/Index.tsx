@@ -16,11 +16,6 @@ const Index = () => {
       <div className="relative">
         <section id="hero" className="container mx-auto px-4 py-20 md:py-32">
           <div className="flex flex-col items-center text-center space-y-8">
-            <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-2">
-              <Icon name="Sparkles" className="text-blue-400" size={16} />
-              <span className="text-sm text-blue-300">Powered by AI</span>
-            </div>
-            
             <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
               ChatGPT Atlas on Windows
             </h1>
